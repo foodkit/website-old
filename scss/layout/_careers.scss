@@ -1,0 +1,236 @@
+.seection-current {
+	padding: 0 0 80px;
+	@include media('>=tablet') {
+		padding: 92px 0 0;
+	}
+	.section-title {
+		.title {
+			@include media('>=tablet') {
+				margin-bottom: 15px;
+			}
+		}
+		.subtitle {
+			font-weight: 300;
+		}
+	}
+}
+
+.section-mibile-info {
+	font-weight: 300;
+	padding: 75px 0 0;
+	line-height: 30px;
+	margin-bottom: 93px;
+	.info-holder {
+		padding: 0 25px;
+	}
+	.text-holder {
+		margin-bottom: 67px;
+	}
+	.img-holder {
+		.static-img {
+			padding-bottom: 10px;
+		}
+		.small-img {
+			right: 0;
+			bottom: 0;
+		}
+	}
+}
+
+.tab-careers {
+	padding: 15px 0 0;
+	@include media('>=tablet') {
+		padding: 36px 0 0;
+	}
+	.tabs-nav {
+		flex-grow: 1;
+		padding: 12px;
+		@include media('>=tablet') {
+			padding: 12px 0 0;
+			border-right: 1px solid rgba(#979797, 1);
+		}
+		@include media('>=widescreen') {
+			padding-left: 9px;
+		}
+		.subtitle {
+			color: #918d91;
+			font-size: 17px;
+			font-weight: 300;
+			vertical-align: top;
+			display: inline-block;
+			@include media('<tablet') {
+				margin-bottom: 6px;
+			}
+			@include media('>=tablet') {
+				font-size: 20px;
+			}
+		}
+	}
+	.nav-item {
+		&:not(:last-of-type) {
+			margin-bottom: 43px;
+			@include media('>=widescreen') {
+				margin-bottom: 55px;
+			}
+		}
+	}
+	.nav-link {
+		margin-bottom: 4px;
+		padding: 0 35px 0 0;
+		&:not(.modal-opener) {
+			@include media('<tablet') {
+				font-size: 20px;
+				pointer-events: none;
+			}
+			&:after {
+				top: 50%;
+				right: 0;
+				position: absolute;
+				transform: translate(0, -50%);
+				border: {
+					style: solid;
+					width: 18px 31px 18px 0;
+					color: transparent $steel-blue transparent transparent;
+				};
+			}
+		}
+		&.active:not(.modal-opener) {
+			&:after {
+				@include media('>=tablet') {
+					content: '';
+				}
+			}
+		}
+	}
+	.modal-opener {
+		font-weight: 300;
+		font-size: 15px;
+		&:not(:hover) {
+			color: #0072C9;
+		}
+		&:after {
+			content: '»';
+			margin-left: 8px;
+		}
+	}
+}
+
+.tab-careers-content {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 28px;
+	@include media('>=tablet') {
+		padding-bottom: 50px;
+	}
+	@include media('>=widescreen') {
+		padding-left: 21px;
+		padding-bottom: 123px;
+	}
+	.tab-pane {
+		@include media('<tablet') {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			z-index: 9999;
+			position: fixed;
+			transition: none;
+			background: rgba($black, .5);
+			animation: modal-fade-in .15s ease-out forwards paused;
+			@keyframes modal-fade-in {
+				from {
+					opacity: 0;
+				}
+				to {
+					opacity: 1;
+				}
+			}
+		}
+		&.active {
+			@include media('<tablet') {
+				animation-play-state: running;
+			}
+			> div {
+				@include media('<tablet') {
+					animation-play-state: running;
+				}
+			}
+		}
+		> div {
+			@include media('<tablet') {
+				width: 90%;
+				height: auto;
+				max-width: 500px;
+				max-height: 90%;
+				overflow-y: auto;
+				margin: 30px auto;
+				position: relative;
+				background: $white;
+				border-radius: 3px;
+				border: 1px solid #eae5e5;
+				box-shadow: 0 0 9px 0 rgba($black, .5);
+				transform: translate(0, -25%);
+				animation: modal-go .3s ease-out forwards paused;
+				@keyframes modal-go {
+					from {
+						transform: translate(0, -25%);
+					}
+					to {
+						transform: translate(0, 0);
+					}
+				}
+			}
+		}
+	}
+	.modal-header {
+		padding-top: 7px;
+		padding-bottom: 7px;
+		@include media('<tablet') {
+			font-size: 18px;
+			background: #e7e4e4;
+			padding: 16px 15px 20px 21px;
+		}
+		@include media('<374px') {
+			padding: 16px 10px;
+		}
+	}
+	.modal-title {
+		@include media('<tablet') {
+			font-size: 18px;
+		}
+	}
+	.modal-body {
+		padding: 35px 10px 60px;
+		@include media('>=375px') {
+			padding: 35px 15px 60px 20px;
+		}
+		@include media('>=tablet') {
+			padding: 20px 15px 0;
+		}
+	}
+	.text-section {
+		margin-bottom: 34px;
+		@include media('>=tablet') {
+			margin-bottom: 37px;
+		}
+	}
+	.box-title {
+		font-size: 15px;
+		margin-bottom: 34px;
+	}
+	.btn-section {
+		.btn {
+			min-width: 130px;
+		}
+	}
+	.close {
+		opacity: 1;
+		line-height: 1;
+		font-size: 42px;
+		font-weight: 300;
+		&:hover, &:focus {
+			opacity: .5;
+		}
+	}
+}

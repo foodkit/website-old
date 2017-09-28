@@ -1,0 +1,235 @@
+.section-api {
+	z-index: -2;
+	position: relative;
+	padding: 69px 0 30px;
+	@include media('>=tablet') {
+		padding: 133px 0 163px;
+	}
+	&:before {
+		top: 0;
+		left: 0;
+		right: 0;
+		content: '';
+		bottom: -85px;
+		position: absolute;
+		background: rgba($black, .39);
+	}
+	.container {
+		position: relative;
+	}
+	.section-title {
+		margin-bottom: 64px;
+		@include media('>=tablet') {
+			margin-bottom: 68px;
+		}
+	}
+}
+
+.section-api-decoration {
+	margin: 0 0 7px;
+	@include media('>=tablet') {
+		margin: 0 0 18px;
+	}
+}
+
+.api-list {
+	@include media('<tablet') {
+		font-size: 14px;
+	}
+	@include media('>=375px', '<tablet') {
+		padding: 0 16px;
+		max-width: 345px;
+	}
+	@include media('>=tablet') {
+		max-width: 862px;
+	}
+	li {
+		width: 46%;
+		padding-left: 32px;
+		margin-bottom: 41px;
+		@include media('>=tablet') {
+			width: 21%;
+			margin-bottom: 29px;
+		}
+		@include media('>=desktop') {
+			padding-left: 40px;
+		}
+	}
+	.img-holder {
+		left: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+
+.section-api-advantages {
+	padding: 93px 0 63px;
+	@include media('>=tablet') {
+		padding: 160px 0 132px;
+	}
+	.list-holder {
+		li {
+			@include media('>=tablet') {
+				width: 46%;
+				margin-bottom: 36px;
+			}
+			&:not(:last-of-type) {
+				@include media('<tablet') {
+					margin-bottom: 63px;
+				}
+			}
+		}
+	}
+	.media {
+		font-weight: 300;
+		@include media('<tablet') {
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	.img-holder {
+		@include media('<tablet') {
+			margin: 0 auto 14px;
+		}
+		@include media('>=tablet') {
+			width: 112px;
+			text-align: center;
+		}
+	}
+	.media-title {
+		margin-bottom: 17px;
+		@include media('<tablet') {
+			font-size: 20px;
+			margin-bottom: 14px;
+		}
+	}
+}
+
+.section-join {
+	padding: 56px 0 65px;
+	background: linear-gradient(to right, rgba(#23ae86, 1) 0%, rgba(#01a0d5, 1) 100%);
+	@include media('>=tablet') {
+		padding: 62px 0 65px;
+	}
+	.holder {
+		&:before {
+			left: 106%;
+			bottom: -46px;
+			width: 733px;
+			height: 210px;
+			position: absolute;
+			transform: translate(-50%, 0) rotate(-5deg);
+			background: url('../images/section-actions-decoration-2x.png') no-repeat;
+			background-size: contain;
+			@include media('>=tablet') {
+				content: '';
+			}
+		}
+	}
+	.img-holder {
+		@include media('<tablet') {
+			margin-bottom: 45px;
+			padding: 0 40px 0 5px;
+		}
+	}
+	.small-img {
+		bottom: 0;
+		right: 9px;
+		@include media('>=tablet') {
+			right: -24px;
+		}
+	}
+	.text-box {
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 28px;
+		@include media('<tablet') {
+			margin: 0 auto;
+			max-width: 307px;
+		}
+		@include media('>=tablet') {
+			font-size: 17px;
+			padding: 24px 0 0;
+		}
+		@include media('>=widescreen') {
+			padding: 24px 36px 0 62px;
+		}
+	}
+	.title {
+		font-weight: 100;
+		margin-bottom: 23px;
+		@include media('<tablet') {
+			font-size: 27px;
+		}
+	}
+	.text-holder {
+		margin-bottom: 36px;
+		@include media('>=tablet') {
+			margin-bottom: 43px;
+		}
+		p {
+			&:only-child, &:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.btn-holder {
+		.btn {
+			font-size: 15px;
+			min-width: 117px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			@include media('>=tablet') {
+				font-size: 1rem;
+				min-width: 179px;
+				padding-top: 13px;
+				padding-bottom: 11px;
+			}
+		}
+	}
+}
+
+.section-control {
+	padding: 65px 0 162px;
+	@include media('>=tablet') {
+		padding: 136px 0 137px;
+	}
+	.section-title {
+		font-weight: 300;
+		line-height: 28px;
+		.title {
+			margin-bottom: 10px;
+			@include media('>=tablet') {
+				margin-bottom: 14px;
+			}
+		}
+		.subtitle {
+			@include media('>=tablet') {
+				margin: 0 auto;
+				max-width: 514px;
+			}
+		}
+	}
+	.img-box {
+		padding: 30px 0 20px;
+		@include media('>=tablet') {
+			padding: 96px 0 20px;
+		}
+		.img-holder {
+			&:before {
+				top: 50%;
+				left: 50%;
+				z-index: -1;
+				width: 921px;
+				height: 434px;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				background: url('../images/decoration2-large-2x.png') no-repeat;
+				background-size: contain;
+				@include media('>=tablet') {
+					content: '';
+				}
+			}
+		}
+	}
+}

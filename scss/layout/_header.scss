@@ -1,0 +1,159 @@
+#header {
+	z-index: 100;
+	color: $white;
+	position: relative;
+	.navbar {
+		@include media('<tablet') {
+			padding: 12px 0;
+		}
+	}
+	.navbar-toggler {
+		padding: 0;
+		border: none;
+		width: 36px;
+		height: 24px;
+		margin: 8px 5px;
+		position: relative;
+		&:before, &:after {
+			content: '';
+		}
+		&:before {
+			top: 0;
+			width: 18px;
+		}
+		&:after {
+			bottom: 0;
+			width: 36px;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	.navbar-toggler {
+		.navbar-toggler-icon, &:before, &:after {
+			right: 0;
+			height: 4px;
+			border-radius: 5em;
+			background: $white;
+			position: absolute;
+		}
+	}
+	.navbar-toggler-icon {
+		top: 50%;
+		width: 28px;
+		transform: translate(0, -50%);
+	}
+}
+
+.logo-holder {
+	@include media('>=tablet') {
+		margin-right: 20px;
+	}
+	@include media('>=widescreen') {
+		margin-right: 41px;
+	}
+	.descriptor {
+		font-size: 1.063rem;
+		margin-left: .6875rem;
+		letter-spacing: .15em;
+		@include media('>=desktop') {
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.navbar-collapse {
+	@include media('<tablet') {
+		top: 0;
+		left: 100%;
+		width: 290px;
+		position: fixed;
+		overflow-y: auto;
+		background: #f3f3f3;
+		height: 100vh !important;
+		display: block !important;
+		border-left: 1px solid #e5e4e4;
+		box-shadow: inset 4px 0 4px rgba($black, .13);
+		@include media('<375px') {
+			width: 235px;
+		}
+	}
+	.navbar-nav {
+		font-weight: 300;
+		font-size: .875rem;
+		@include media('<tablet') {
+			padding: 2px 0;
+		}
+		@include media('>=tablet') {
+			text-transform: uppercase;
+		}
+		.nav-item {
+			&:not(:last-of-type) {
+				@include media('>=tablet') {
+					margin-right: 5px;
+				}
+				@include media('>=desktop') {
+					margin-right: 29px;
+				}
+			}
+			.nav-link {
+				@include media('<tablet') {
+					color: $black;
+					padding: 17px 18px;
+					position: relative;
+					border-bottom: 1px solid #cbcbcb;
+				}
+				&:hover {
+					@include media('<tablet') {
+						color: $steel-blue;
+					}
+					&:before {
+						width: 100%;
+					}
+				}
+				&:before {
+					left: 50%;
+					width: 0;
+					height: 1px;
+					bottom: -1px;
+					position: absolute;
+					background: $steel-blue;
+					transition: width $animation-speed ease-in-out;
+					transform: translate(-50%, 0);
+					@include media('<tablet') {
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}
+
+.sign-up-box {
+	.login {
+		font-weight: 300;
+		font-size: .875rem;
+	}
+	a {
+		&:not(:last-of-type) {
+			margin-right: 10px;
+			@include media('>=desktop') {
+				margin-right: 21px;
+			}
+		}
+		&:not(:hover) {
+			color: inherit;
+		}
+	}
+	.btn {
+		min-width: 140px;
+		@include media('>=tablet', '<desktop') {
+			font-size: .875rem;
+		}
+		@include media('>=desktop') {
+			min-width: 170px;
+			padding-top: 9px;
+			padding-bottom: 7px;
+		}
+	}
+}

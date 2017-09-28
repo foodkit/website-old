@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FoodKit</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400%7cRoboto:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js" defer><\/script>')</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" defer></script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+<div id="wrapper">
+	<div class="flex-column position-relative">
+		<header id="header">
+			<div class="container">
+				<nav class="navbar navbar-light navbar-expand-md">
+					<div class="logo-holder d-inline-flex align-items-center">
+						<div class="logo">
+							<a class="navbar-brand" href="/">
+								<picture>
+									<source srcset="images/logo-small.png, images/logo-small-2x.png 2x" media="(max-width: 767px)">
+									<source srcset="images/logo-large.png, images/logo-large-2x.png 2x">
+									<img src="images/logo-small.png" alt="Foodkit">
+								</picture>
+							</a>
+						</div>
+						<div class="descriptor text-uppercase">FOODKIT</div>
+					</div>
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarColor03">
+						<ul class="navbar-nav">
+							<li class="nav-item hidden-md-up">
+								<a class="nav-link" href="#">Foodkit Product</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="api-page.html">Developers </a>
+							</li>
+							<li class="nav-item hidden-md-up">
+								<a class="nav-link" href="api-features.html">Developer pricing</a>
+							</li>
+							<li class="nav-item hidden-md-up">
+								<a class="nav-link" href="about-us.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="careers.html">Careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-up-box d-inline-flex align-items-center flex-nowrap hidden-md-down">
+						<a href="https://api.ginja.co.th/admin/login" class="login" target="_blank">Login</a>
+						<a href="#" class="btn btn-warning badge-pill">GET STARTED</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main id="main" class="content-api-page">
+			<div class="section-page-header position-relative text-light">
+				<div class="section-wrapper position-relative">
+					<div class="box-holder position-relative">
+						<div class="container">
+							<div class="row top-holder">
+								<div class="col-12 col-md-5">
+									<div class="section-title">
+										<h2 class="title">A complete API suite for restaurants</h2>
+									</div>
+									<div class="text-holder">
+										<p>A full featured RESTful API for developers lets you code in the language of your choice. With Foodkit API you get the flexibility you need to deliver the best results, fast.</p>
+									</div>
+									<div class="btn-holder d-flex flex-column flex-md-row align-items-center align-items-md-start">
+										<a class="btn btn-warning btn-lg badge-pill text-uppercase" href="#" role="button">GET STARTED</a>
+										<a class="btn btn-light btn-lg badge-pill text-uppercase" href="#" role="button">VIEW GUIDES</a>
+									</div>
+								</div>
+								<div class="col-12 col-md-7 hidden-md-down">
+									<div class="img-box">
+										<picture>
+											<source srcset="images/api-img-large.png, images/api-img-large-2x.png 2x">
+											<img src="images/api-img-large.png" alt="image description">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="page-header-info position-relative">
+										<div class="ml-md-auto">
+											<h2 class="title">Build exactly what you want, how you want.</h2>
+										</div>
+										<div class="img-box">
+											<picture>
+												<source srcset="images/api-example-small.png, images/api-example-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/api-example-large.png, images/api-example-large-2x.png 2x">
+												<img src="images/api-example-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="text-holder ml-md-auto">
+											<p class="hidden-md-down">Foodkit’s industry-leading platform gives you the power and flexibility to build world class restaurant services for your business or customer, including:</p>
+											<ul class="list-holder list-unstyled custom-list">
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Ecommerce apps & web</li>
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Instore kiosks</li>
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Loyalty programs</li>
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Customer Service interface</li>
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Chatbot ordering</li>
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Driver Apps (logistics)</li>
+												<li class="d-flex d-md-inline-flex align-items-baseline"><i class="icon-check"></i>Instore order management apps</li>
+											</ul>
+											<p class="hidden-md-down">Let your imagination run free.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-api">
+						<div class="container">
+							<div class="row">
+								<div class="col-12">
+									<div class="section-api-decoration text-center">
+										<picture>
+											<source srcset="images/api-decoration-small.png, images/api-decoration-small-2x.png 2x" media="(max-width: 767px)">
+											<source srcset="images/api-decoration-large.png, images/api-decoration-large-2x.png 2x">
+											<img src="images/api-decoration-small.png" alt="image description">
+										</picture>
+									</div>
+									<header class="section-title text-center">
+										<h2 class="title">A complete API for restaurants</h2>
+									</header>
+								</div>
+								<div class="col-12 d-flex justify-content-center">
+									<ul class="api-list list-unstyled d-flex flex-wrap justify-content-between">
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute position-relative">
+												<picture>
+													<source srcset="images/products-img-large.png, images/products-img-large-2x.png 2x">
+													<img src="images/products-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Products</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/addresses-img-large.png, images/addresses-img-large-2x.png 2x">
+													<img src="images/addresses-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Addresses</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/statistics-img-large.png, images/statistics-img-large-2x.png 2x">
+													<img src="images/statistics-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Statistics</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/webhooks-img-large.png, images/webhooks-img-large-2x.png 2x">
+													<img src="images/webhooks-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Webhooks</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/orders-img-large.png, images/orders-img-large-2x.png 2x">
+													<img src="images/orders-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Orders</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/deliveries-img-large.png, images/deliveries-img-large-2x.png 2x">
+													<img src="images/deliveries-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Deliveries</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/promotions-img-large.png, images/promotions-img-large-2x.png 2x">
+													<img src="images/promotions-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Promotions</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/websites-img-large.png, images/websites-img-large-2x.png 2x">
+													<img src="images/websites-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Websites</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/payments-img2-large.png, images/payments-img2-large-2x.png 2x">
+													<img src="images/payments-img2-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Payments</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/delivery-zones-img-large.png, images/delivery-zones-img-large-2x.png 2x">
+													<img src="images/delivery-zones-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Delivery zones</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/coupons-img-large.png, images/coupons-img-large-2x.png 2x">
+													<img src="images/coupons-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Coupons</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/notifications-img-large.png, images/notifications-img-large-2x.png 2x">
+													<img src="images/notifications-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Notifications</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/customers-img-large.png, images/customers-img-large-2x.png 2x">
+													<img src="images/customers-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Customers</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/stores-img-large.png, images/stores-img-large-2x.png 2x">
+													<img src="images/stores-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Stores</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/shopping-carts-img-large.png, images/shopping-carts-img-large-2x.png 2x">
+													<img src="images/shopping-carts-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder"><span class="hidden-md-down">Shopping </span>carts</div>
+										</li>
+										<li class="d-inline-flex position-relative">
+											<div class="img-holder position-absolute">
+												<picture>
+													<source srcset="images/checkout-img-large.png, images/checkout-img-large-2x.png 2x">
+													<img src="images/checkout-img-large.png" alt="image description">
+												</picture>
+											</div>
+											<div class="text-holder">Checkout</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-services position-relative">
+				<div class="holder position-relative">
+					<div class="container position-relative">
+						<div class="row">
+							<div class="col-12">
+								<header class="section-title text-center">
+									<h2 class="title">Trusted and loved by the best</h2>
+								</header>
+							</div>
+							<div class="col-12">
+								<ul class="list-unstyled d-flex justify-content-around align-items-center">
+									<li>
+										<a href="#">
+											<picture>
+												<source srcset="images/dq-img-small.png, images/dq-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/dq-img-large.png, images/dq-img-large-2x.png 2x">
+												<img src="images/dq-img-small.png" alt="DQ">
+											</picture>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<picture>
+												<source srcset="images/the-coffee-club-img-small.png, images/the-coffee-club-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/the-coffee-club-img-large.png, images/the-coffee-club-img-large-2x.png 2x">
+												<img src="images/the-coffee-club-img-small.png" alt="the coffee club">
+											</picture>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<picture>
+												<source srcset="images/bonchon-img-small.png, images/bonchon-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/bonchon-img-large.png, images/bonchon-img-large-2x.png 2x">
+												<img src="images/bonchon-img-small.png" alt="bonchon-img">
+											</picture>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<picture>
+												<source srcset="images/audrey-img-small.png, images/audrey-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/audrey-img-large.png, images/audrey-img-large-2x.png 2x">
+												<img src="images/audrey-img-small.png" alt="image description">
+											</picture>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-api-advantages">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul class="list-holder list-unstyled d-flex flex-wrap flex-column flex-md-row justify-content-between align-items-center align-items-md-start">
+								<li class="ordee-md-1">
+									<div class="media flex-column flex-md-row">
+										<div class="img-holder text-center">
+											<picture>
+												<source srcset="images/powerful-api-img-small.png, images/powerful-api-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/powerful-api-img-large.png, images/powerful-api-img-large-2x.png 2x">
+												<img src="images/powerful-api-img-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="media-body text-center text-md-left">
+											<h5 class="media-title text-primary">Powerful API Suite</h5>
+											<p>Our robust RESTful JSON API empowers you to manage digital ordering, marketing, and deliveries across a single or many locations.</p>
+										</div>
+									</div>
+								</li>
+								<li class="order-md-3">
+									<div class="media flex-column flex-md-row">
+										<div class="img-holder text-center">
+											<picture>
+												<source srcset="images/built-img-small.png, images/built-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/built-img-large.png, images/built-img-large-2x.png 2x">
+												<img src="images/built-img-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="media-body text-center text-md-left">
+											<h5 class="media-title text-primary">Built for scale</h5>
+											<p>Whether you're building for a single location or a restaurant empire, Foodkit has the features, flexibility and performance for you to thrive.</p>
+										</div>
+									</div>
+								</li>
+								<li class="order-md-5">
+									<div class="media flex-column flex-md-row">
+										<div class="img-holder text-center">
+											<picture>
+												<source srcset="images/innovation-img-small.png, images/innovation-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/innovation-img-large.png, images/innovation-img-large-2x.png 2x">
+												<img src="images/innovation-img-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="media-body text-center text-md-left">
+											<h5 class="media-title text-primary">Innovation on autopilot</h5>
+											<p>We're constantly innovating through new features and platform updates, so you don't need to.</p>
+										</div>
+									</div>
+								</li>
+								<li class="order-md-2">
+									<div class="media flex-column flex-md-row">
+										<div class="img-holder text-center">
+											<picture>
+												<source srcset="images/platform-img-small.png, images/platform-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/platform-img-large.png, images/platform-img-large-2x.png 2x">
+												<img src="images/platform-img-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="media-body text-center text-md-left">
+											<h5 class="media-title text-primary">Platform Independant</h5>
+											<p>Use any language, and any technology stack. The Foodkit API is completely open so you can use your existing skills and knowledge to build something incredible.</p>
+										</div>
+									</div>
+								</li>
+								<li class="order-md-4">
+									<div class="media flex-column flex-md-row">
+										<div class="img-holder text-center">
+											<picture>
+												<source srcset="images/lightning-img-small.png, images/lightning-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/lightning-img-large.png, images/lightning-img-large-2x.png 2x">
+												<img src="images/lightning-img-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="media-body text-center text-md-left">
+											<h5 class="media-title text-primary">Lightning fast</h5>
+											<p>Our worldwide CDN and redundant architecture means your assets and API requests are serviced quickly and reliably, everytime.</p>
+										</div>
+									</div>
+								</li>
+								<li class="order-md-6 d-flex">
+									<div class="media flex-column flex-md-row">
+										<div class="img-holder text-center">
+											<picture>
+												<source srcset="images/plug-img-small.png, images/plug-img-small-2x.png 2x" media="(max-width: 767px)">
+												<source srcset="images/plug-img-large.png, images/plug-img-large-2x.png 2x">
+												<img src="images/plug-img-small.png" alt="image description">
+											</picture>
+										</div>
+										<div class="media-body text-center text-md-left">
+											<h5 class="media-title text-primary">Plug and play</h5>
+											<p>Foodkit is built to integrate into your existing systems, processes and workflows.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-join text-light">
+				<div class="container">
+					<div class="holder position-relative">
+						<div class="row">
+							<div class="col-12 col-md-6 col-lg-5 text-center">
+								<div class="img-holder d-inline-flex position-relative">
+									<div class="static-img">
+										<div class="rounded-circle">
+											<picture>
+												<source srcset="images/description-img9-small.jpg, images/description-img9-small-2x.jpg 2x" media="(max-width: 767px)">
+												<source srcset="images/description-img9-large.jpg, images/description-img9-large-2x.jpg 2x">
+												<img src="images/description-img9-small.jpg" alt="image description">
+											</picture>
+										</div>
+									</div>
+									<div class="small-img rounded-circle position-absolute">
+										<picture>
+											<source srcset="images/description-img8-small.jpg, images/description-img8-small-2x.jpg 2x" media="(max-width: 767px)">
+											<source srcset="images/description-img8-large.jpg, images/description-img8-large-2x.jpg 2x">
+											<img src="images/description-img8-small.jpg" alt="image description">
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-5 col-lg-6 ml-md-auto">
+								<div class="text-box">
+									<h2 class="title">Come work with us.</h2>
+									<div class="text-holder">
+										<p>Join Foodkit on its amazing journey - To build amazing products and services that change the way the F&B industry operates in a fast moving digital world. We have some exciting positions presently available in our Bangkok office.</p>
+									</div>
+									<div class="btn-holder">
+										<a class="btn btn-light btn-lg badge-pill text-uppercase" href="#" role="button">SEE JOBS</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-control">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<header class="section-title text-center">
+								<h2 class="title text-primary">Admin control</h2>
+								<div class="subtitle">
+									<p>Better understand your digital business and control your complete ecosystem of tech.</p>
+								</div>
+							</header>
+						</div>
+						<div class="col-12">
+							<div class="img-box d-flex justify-content-center">
+								<div class="img-holder position-relative">
+									<picture>
+										<source srcset="images/control-img-small.png, images/control-img-small-2x.png 2x" media="(max-width: 767px)">
+										<source srcset="images/control-img-large.png, images/control-img-large-2x.png 2x">
+										<img src="images/control-img-small.png" alt="image description">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-actions">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between position-relative">
+									<div class="text-holder position-relative">
+										<h4 class="card-title">Get started today</h4>
+										<p class="card-text hidden-md-down">Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi.</p>
+									</div>
+									<div class="btn-holder position-relative">
+										<a href="#" class="btn btn-warning btn-warning-custom badge-pill">GET STARTED</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer-top d-flex flex-column flex-md-row justify-content-md-between">
+							<div class="add-nav-box d-flex flex-wrap justify-content-between justify-content-md-start">
+								<div class="nav-holder">
+									<div class="title text-text-uppercase">PRODUCT</div>
+									<ul class="list-unstyled mb-0">
+										<li><a href="/">Foodkit Product</a></li>
+									</ul>
+								</div>
+								<div class="nav-holder">
+									<div class="title text-text-uppercase">DEVELOPERS</div>
+									<ul class="list-unstyled mb-0">
+										<li><a href="api-page.html">Food API</a></li>
+										<li><a href="api-features.html">Pricing</a></li>
+									</ul>
+								</div>
+								<div class="nav-holder">
+									<div class="title text-text-uppercase">COMPANY</div>
+									<ul class="list-unstyled mb-0">
+										<li><a href="about-us.html">About</a></li>
+										<li><a href="careers.html">Careers</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="news-holder">
+								<div class="title text-uppercase">NEWS</div>
+								<div class="text-holder">
+									<p>Keep up with Foodkit and industry news</p>
+								</div>
+								<form class="form-inline">
+									<input class="form-control" type="email" placeholder="enter your email ">
+									<button class="btn btn-success" type="submit">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="footer-bottom-holder d-flex justify-content-between align-items-end">
+								<div class="copyright-box">
+									<div class="copyright-holder d-inline-flex align-items-center">
+										<div class="logo">
+											<a class="navbar-brand" href="/">
+												<picture>
+													<source srcset="images/logo-small.png, images/logo-small-2x.png 2x" media="(max-width: 767px)">
+													<source srcset="images/logo-large.png, images/logo-large-2x.png 2x">
+													<img src="images/logo-small.png" alt="image description">
+												</picture>
+											</a>
+										</div>
+										<div class="copyright">© Copyright 2015 - 2017 Foodkit.</div>
+									</div>
+									<ul class="link-holder list-unstyled d-inline-flex hidden-md-down mb-0">
+										<li><a href="#">Terms of Service</a></li>
+										<li><a href="#">Privacy Policy</a></li>
+									</ul>
+								</div>
+								<ul class="social-network list-unstyled d-inline-flex mb-0 hidden-md-down">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-github"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble"></i></a></li>
+									<li><a href="#"><i class="icon-stackoverflow"></i></a></li>
+									<li><a href="#"><i class="icon-facebook2"></i></a></li>
+									<li><a href="#"><i class="icon-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

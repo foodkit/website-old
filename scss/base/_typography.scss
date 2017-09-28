@@ -1,0 +1,9 @@
+h2, .h2 {
+	@include media('<tablet') {
+		font-size: 1.688rem;
+	}
+}
+
+a {
+	transition: color $animation-speed ease-in-out;
+}
