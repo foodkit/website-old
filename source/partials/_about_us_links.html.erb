@@ -1,0 +1,23 @@
+<div class="section-nav-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="nav-holder position-relative">
+          <ul class="nav justify-content-between">
+            <% {
+              "about" => "About Us",
+              "about-careers" => "Careers",
+              "about-contact-us" => "Contact Us"
+            }.each do |k, v| %>
+              <li class="nav-item position-relative">
+                <a class="d-inline-flex nav-link <%= 'active' if selected == k %>" href="<%= url_for ("/" + k + ".html") %>">
+                  <%= v %>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

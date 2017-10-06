@@ -1,0 +1,47 @@
+<header id="header">
+	<div class="container">
+		<nav class="navbar navbar-light navbar-expand-md">
+			<div class="logo-holder d-inline-flex align-items-center">
+				<div class="logo">
+					<a class="navbar-brand" href="/">
+						<picture>
+							<source srcset="images/logo-small.png, images/logo-small-2x.png 2x" media="(max-width: 767px)">
+							<source srcset="images/logo-large.png, images/logo-large-2x.png 2x">
+							<img src="images/logo-small.png" alt="Foodkit">
+						</picture>
+					</a>
+				</div>
+				<div class="descriptor text-uppercase">FOODKIT</div>
+			</div>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarColor03">
+				<ul class="navbar-nav">
+					<li class="nav-item hidden-md-up">
+						<a class="nav-link" href="<%= url_for "/" %>">Foodkit Product</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<%= url_for "/developers.html" %>">Developers </a>
+					</li>
+					<li class="nav-item hidden-md-up">
+						<a class="nav-link" href="<%= url_for "/developers-pricing.html" %>">Developer pricing</a>
+					</li>
+					<li class="nav-item hidden-md-up">
+						<a class="nav-link" href="<%= url_for "/about.html" %>">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<%= url_for "/about-careers.html" %>">Careers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="<%= url_for "/about-contact-us.html" %>">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sign-up-box d-inline-flex align-items-center flex-nowrap hidden-md-down">
+				<a href="https://api.ginja.co.th/admin/login" class="login" target="_blank">Login</a>
+				<a href="#" class="btn btn-warning badge-pill btn-cta">GET STARTED</a>
+			</div>
+		</nav>
+	</div>
+</header>

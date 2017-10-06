@@ -1,0 +1,79 @@
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="footer-top d-flex flex-column flex-md-row justify-content-md-between">
+					<div class="add-nav-box d-flex flex-wrap justify-content-between justify-content-md-start">
+						<div class="nav-holder">
+							<div class="title text-text-uppercase">PRODUCT</div>
+							<ul class="list-unstyled mb-0">
+								<li><a href="<%= url_for "/" %>">Foodkit Product</a></li>
+							</ul>
+						</div>
+						<div class="nav-holder">
+							<div class="title text-text-uppercase">DEVELOPERS</div>
+							<ul class="list-unstyled mb-0">
+								<li><a href="<%= url_for "/developers.html" %>">Food API</a></li>
+								<li><a href="<%= url_for "/developers-pricing.html" %>">Pricing</a></li>
+							</ul>
+						</div>
+						<div class="nav-holder">
+							<div class="title text-text-uppercase">COMPANY</div>
+							<ul class="list-unstyled mb-0">
+								<li><a href="<%= url_for "/about.html" %>">About</a></li>
+								<li><a href="<%= url_for "/about-careers.html" %>">Careers</a></li>
+								<li><a href="<%= url_for "/about-contact-us.html" %>">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="news-holder">
+						<div class="title text-uppercase">NEWS</div>
+						<div class="text-holder">
+							<p>Keep up with Foodkit and industry news</p>
+						</div>
+						<form class="form-inline">
+							<input class="form-control" type="email" placeholder="enter your email ">
+							<button class="btn btn-success" type="submit">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="footer-bottom-holder d-flex justify-content-between align-items-end">
+						<div class="copyright-box">
+							<div class="copyright-holder d-inline-flex align-items-center">
+								<div class="logo">
+									<a class="navbar-brand" href="<%= url_for "/" %>">
+										<picture>
+											<source srcset="images/logo-small.png, images/logo-small-2x.png 2x" media="(max-width: 767px)">
+											<source srcset="images/logo-large.png, images/logo-large-2x.png 2x">
+											<img src="images/logo-small.png" alt="image description">
+										</picture>
+									</a>
+								</div>
+								<div class="copyright">© Copyright 2015 - <%= Time.now.year %> Foodkit.</div>
+							</div>
+							<ul class="link-holder list-unstyled d-inline-flex hidden-md-down mb-0">
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<ul class="social-network list-unstyled d-inline-flex mb-0 hidden-md-down">
+							<li><a href="https://twitter.com/foodkit"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://github.com/foodkit"><i class="icon-github"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-stackoverflow"></i></a></li>
+							<li><a href="https://www.facebook.com/foodkitio"><i class="icon-facebook2"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,108 @@
+
+$bg-color: rgba(28, 27, 34, 0.94);
+$font-color: #e6e9ea;
+
+/* hide scroll bars on modal window */
+.modal-body {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+.modal-body::-webkit-scrollbar {
+    display: none;  // Safari and Chrome
+}
+
+.modal {
+
+  /* background and fonts */
+  background-color: $bg-color;
+  color: $font-color;
+  opacity: 1;
+  font-family: Gotham, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 300;
+
+  visibility: visible;
+  display: block;
+
+  /* close button */
+  .modal-close {
+    color: #77757f;
+    cursor: pointer;
+    font-size: 3rem;;
+    font-weight: normal;
+    line-height: 1;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    z-index: 1099;
+  }
+
+  /* remove background colors and borders */
+  .modal-content, .modal-body {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .modal-content {
+
+    max-width: 42rem;
+    margin: 0 auto 0 auto;
+
+    .modal-body {
+      max-height: 100vh;
+      overflow-y: auto;
+      top: 5rem;
+
+      h2 { padding: 0rem 0 .15rem 0; }
+      p { padding: .25rem 0 1.5rem 0; }
+
+      ul.contact-us {
+        color: #1b9acf;
+        padding: 0;
+        margin: 0 0 1.5em 0;
+        li {
+          text-align: center;
+          list-style: none;
+        }
+      }
+
+      /* input fields */
+      input[type=text], input[type=email] {
+        height: auto;
+        font-weight: 300;
+        padding: 1.35rem 1.25rem 1.1rem 1.25rem;
+        background-color: #d8d8d8;
+        border: 1px solid #979797;
+        border-radius: 4px;
+        width: 100%;
+        margin: .9em 0 .9em 0;
+      }
+
+      ul.validation-messages {
+        padding: .85rem 0 .85rem 0;
+        li {
+          list-style: none;
+          color: red;
+        }
+      }
+
+      /* cta button */
+      .btn {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        display: block;
+        margin: 2.2rem auto 0 auto;
+      }
+    }
+  }
+
+  .modal-footer {
+    border: 0;
+  }
+}
+
+.fade-leave-active {
+  transition: opacity .5s
+}
+.fade-leave-active, .fade-leave-to {
+  opacity: 0
+}

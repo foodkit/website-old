@@ -1,0 +1,31 @@
+{
+  "jobs": [
+    {
+      "title": "Fullstack Software Engineer",
+      "department": "Engineering",
+      "slug": "engineering",
+      "description": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.",
+      "responsibilities": [
+        "Work with the CTO to architect scalable web solutions.",
+        "Mentor other developers, encouraging them to develop their skills and expertise.",
+        "Continuously ship real value to the end user.",
+        "Deliver performant, reliable, maintainable and tested code.",
+        "Plan and estimate project timelines and delivery dates.",
+        "Perform daily stand-up meetings.",
+        "Review other developers' code before merging and releasing to produc",
+        "Work towards tight deadlines in a results - oriented environment.",
+        "Help to refine and develop the processes and procedures of the engineering team."
+      ],
+      "experiences": [
+        "4+ years working in a professional software development environment.",
+        "Agile software development practices and concepts such as Scrum, Kanban, TDD &amp; continuous integration.",
+        "Very strong core skills in PHP 5.6+ / 7.0 development, HTML 5, Javascript, JSON and MySQL.",
+        "Experience building large web applications using MVC frameworks, preferably Laravel 5.x.",
+        "Experience building RESTful JSON APIs and consuming them via single page web applications, preferably Angular 2+.",
+        "Understanding of patterns and techniques for building scalable back-end infrastructure (caching, client rate limiting, authentication and authorization schemes).",
+        "Deep understanding of SCM tools, specifically Git and GitHub.",
+        "Proficient English communication skills, both written and spoken."
+      ]
+    }
+  ]
+}

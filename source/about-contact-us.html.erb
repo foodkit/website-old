@@ -1,0 +1,110 @@
+---
+title: Contact us
+---
+<main id="main" class="content-contact">
+  <div class="section-page-header position-relative">
+    <div class="section-wrapper position-relative">
+      <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="holder d-flex align-items-center justify-content-center">
+            <header class="section-title text-center text-light">
+              <h2 class="title">Contact Us</h2>
+              <div class="subtitle">
+                <p>We’re here to help</p>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <%= partial "partials/about_us_links", :locals => {:selected => 'about-contact-us'} %>
+  <div class="section-nav-content">
+    <div class="help-box">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <header class="section-title text-center">
+              <h2 class="title text-primary">Got a question? We’re here to help</h2>
+              <div class="subtitle">
+                <p>Foodkit’s support team is standing by to take your question.</p>
+              </div>
+            </header>
+          </div>
+          <div class="col-12">
+            <ul class="card-list list-unstyled d-flex flex-column flex-md-row flex-wrap align-items-center align-items-md-stretch justify-content-md-between mb-0 position-relative">
+              <li class="card text-center position-relative">
+                <div class="card-body">
+                  <div class="card-title-holder">
+                    <h3 class="card-title mb-0">I have a sales inquiry</h3>
+                  </div>
+                  <div class="card-img-holder d-flex align-items-center justify-content-center">
+                    <picture>
+                      <source srcset="images/help-box-img1-small.png, images/help-box-img1-small-2x.png 2x" media="(max-width: 767px)">
+                      <source srcset="images/help-box-img1-large.png, images/help-box-img1-large-2x.png 2x">
+                      <img src="images/help-box-img1-small.png" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="btn-holder d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning d-block">Contact sales team</a>
+                  </div>
+                </div>
+              </li>
+              <li class="card text-center position-relative">
+                <div class="card-body">
+                  <div class="card-title-holder">
+                    <h3 class="card-title mb-0">I need technical help</h3>
+                  </div>
+                  <div class="card-img-holder d-flex align-items-center justify-content-center">
+                    <picture>
+                      <source srcset="images/help-box-img2-small.png, images/help-box-img2-small-2x.png 2x" media="(max-width: 767px)">
+                      <source srcset="images/help-box-img2-large.png, images/help-box-img2-large-2x.png 2x">
+                      <img src="images/help-box-img2-small.png" alt="image description">
+                    </picture>
+                  </div>
+                  <div class="btn-holder d-flex justify-content-center">
+                    <a href="#" class="btn btn-warning d-block">Contact tech support</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-location position-relative">
+    <div class="bg-stretch position-absolute h-100 w-100 hidden-md-down">
+      <span data-srcset="images/location-box-bg-large.jpg, images/location-box-bg-large-2x.jpg 2x"></span>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="location-box-info">
+            <div>
+              <h2 class="title text-primary text-center">International offices</h2>
+              <ul class="address-list list-unstyled d-flex flex-column align-items-center align-items-md-start flex-md-row flex-md-wrap mb-0">
+                <% data.offices.offices.each do |office| %>
+                  <li>
+                    <address class="mb-0">
+                      <span class="address-title h5"><%= office.title %></span>
+                      <div class="address-info">
+                        <%= office.address1 %> <br>
+                        <%= office.address2 %>
+                      </div>
+                      <a href="tel:<%= office.phone %>">
+                        <%= office.phone %>
+                      </a>
+                    </address>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
