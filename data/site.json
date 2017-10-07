@@ -1,5 +1,6 @@
 {
   "site": {
-    "domain": "https://foodkit.io"
+    "domain": "https://foodkit.io",
+    "api_docs": "https://docs.foodkit.apiary.io/"
   }
 }
