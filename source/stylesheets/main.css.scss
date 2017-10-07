@@ -40,11 +40,13 @@ $media-expressions: (
 @import 'layout/common';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/contact';
-@import 'layout/about-us';
-@import 'layout/careers';
-@import 'layout/api-features';
-@import 'layout/api-page';
+@import 'layout/about';
+@import 'layout/about-contact-us';
+@import 'layout/about-careers';
+@import 'layout/developers-pricing';
+@import 'layout/developers';
+@import 'layout/terms-and-conditions';
+@import 'layout/privacy-policy';
 @import 'layout/home-page';
 
 @import 'components/navigation';
