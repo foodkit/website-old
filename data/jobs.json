@@ -4,7 +4,7 @@
       "title": "Fullstack Software Engineer",
       "department": "Engineering",
       "slug": "engineering",
-      "description": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae.",
+      "description": "Now is the perfect time to join our team of Ninja’s as we strategize and develop what we believe is the next paradigm in food tech. We practice agile process and encourage a strong culture of participation and mentorship. The team loves quality code and are big believers in regular unit testing and code reviews.<br><br>Ginja’s technology stack is a RESTful JSON API (Laravel) backend, with Ionic 3 and Angular powering our mobile apps and responsive websites. While expertise in specific technologies is important, we place more emphasis on recruiting team members with a balanced understanding of the development process and a hunger to learn and hone their skills. We practice agile process and encourage a strong culture of participation and mentorship. The team loves quality code and are big believers in regular unit testing and code reviews.<br><br>Now is the perfect time to join Foodkit as we strategize and develop what we believe is the next paradigm in food tech.",
       "responsibilities": [
         "Work with the CTO to architect scalable web solutions.",
         "Mentor other developers, encouraging them to develop their skills and expertise.",
@@ -12,7 +12,7 @@
         "Deliver performant, reliable, maintainable and tested code.",
         "Plan and estimate project timelines and delivery dates.",
         "Perform daily stand-up meetings.",
-        "Review other developers' code before merging and releasing to produc",
+        "Review other developers' code before merging and releasing to production.",
         "Work towards tight deadlines in a results - oriented environment.",
         "Help to refine and develop the processes and procedures of the engineering team."
       ],
@@ -25,7 +25,8 @@
         "Understanding of patterns and techniques for building scalable back-end infrastructure (caching, client rate limiting, authentication and authorization schemes).",
         "Deep understanding of SCM tools, specifically Git and GitHub.",
         "Proficient English communication skills, both written and spoken."
-      ]
+      ],
+      "link": "mailto:careers@foodkit.io?subject=Fullstack%20Software%20Engineer"
     }
   ]
 }

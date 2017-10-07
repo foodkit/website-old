@@ -10,7 +10,14 @@ Middleman allows us to maintain our site using Ruby/Erb files which are compiled
 
 ## Development ##
 
-Middleman provides a web server which can be run using:
+Install dependencies:
+
+```
+bundle install
+npm install
+```
+
+... Middleman provides a web server which can be run using:
 
 ```
 bundle exec middleman
