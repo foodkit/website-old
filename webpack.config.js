@@ -51,7 +51,7 @@ module.exports = {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV),
       },
     }),
-    new Clean(['.tmp']),
+    new Clean(['build']),
     new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
   ],
 };
