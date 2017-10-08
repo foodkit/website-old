@@ -109,17 +109,17 @@ Vue.component('contact-us-step-two', {
           	<div class="form-field">\
               <div class="row">\
                 <div class="form-input-container col-md-6">\
-                  <input class="form-input" id="first_name" name="first_name" type="text" placeholder="First name" autocomplete="off">\
+                  <input class="form-input" id="first_name" v-model="first_name" type="text" placeholder="First name" autocomplete="off">\
                 </div>\
                 <div class="form-input-container col-md-6">\
-    		          <input class="form-input" id="last_name" name="last_name" type="text" placeholder="Last name" autocomplete="off">\
+    		          <input class="form-input" id="last_name" v-model="last_name" type="text" placeholder="Last name" autocomplete="off">\
     		        </div>\
               </div>\
   						<div class="form-input-container">\
-  		          <input class="form-input" id="phone_number" name="phone_number" type="text" placeholder="Phone number" autocomplete="off">\
+  		          <input class="form-input" id="phone_number" v-model="phone_number" type="text" placeholder="Phone number" autocomplete="off">\
   		        </div>\
   						<div class="form-input-container">\
-  		          <input class="form-input" id="business_name" name="business_name" type="text" placeholder="Business or company name" autocomplete="off">\
+  		          <input class="form-input" id="business_name" v-model="business_name" type="text" placeholder="Business or company name" autocomplete="off">\
   		        </div>\
       			</div>\
             <div>\
