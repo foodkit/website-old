@@ -1,0 +1,45 @@
+{
+  "plans": [
+    {
+      "name": "Single",
+      "price": 49.00,
+      "setup_price": 199.00,
+      "css": "btn-success",
+      "features": [
+        "Get your restaurant online fast",
+        "Single store"
+      ]
+    },
+    {
+      "name": "Growth",
+      "price": 599.0,
+      "setup_price": 399.0,
+      "css": "btn-warning",
+      "features": [
+        "Grow your restaurant busines",
+        "Max 5 stores"
+      ]
+    },
+    {
+      "name": "Chain",
+      "price": 1999.0,
+      "setup_price": 999.0,
+      "css": "btn-primary",
+      "features": [
+        "Scale your growing restaurants digital services",
+        "Max 15 stores"
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "price": null,
+      "setup_price": null,
+      "css": "btn-dark",
+      "features": [
+        "Power success with a full multi-store platform",
+        "Multi store"
+      ]
+    }
+  ],
+  "yearly_discount": 0.3
+}

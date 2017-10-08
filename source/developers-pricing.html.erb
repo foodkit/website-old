@@ -28,7 +28,36 @@ title: Pricing for Developers
         </div>
         <div class="col-12">
           <div class="card-deck d-flex flex-wrap justify-content-center">
+            <% data.plans.plans.each do |plan| %>
             <div class="card text-center">
+              <div class="card-header"><%= plan.name %></div>
+              <div class="price-box card-title d-flex align-items-center justify-content-center mb-0">
+                <% if plan.price and plan.setup_price %>
+                  <div class="price-holder monthly">
+                    <p><sup>$</sup><span class="text-amount"><%= plan.price.round 0 %></span><span>/mo</span></p>
+                    <p class="subtitle">+ $<%= plan.setup_price.round 0 %> Setup Fee</p>
+                  </div>
+                  <!--div class="price-holder yearly">
+                    <p><sup>$</sup><span class="text-amount"><%= plan.price.*(data.plans.yearly_discount).round 0 %></span><span>/mo</span></p>
+                    <p class="subtitle">+ $<%= plan.setup_price.*(data.plans.yearly_discount).round 0 %> Setup Fee</p>
+                  </div-->
+                <% else %>
+                  <div class="price-holder">
+                    <span class="price-info">Contact us</span>
+                  </div>
+                <% end %>
+              </div>
+              <div class="card-body">
+                <% plan.features.each do |feature| %>
+                  <p class="card-text"><%= feature %></p>
+                <% end %>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn <%= plan.css %> d-block btn-cta">Get started</a>
+              </div>
+            </div>
+            <% end %>
+            <!--div class="card text-center">
               <div class="card-header">Single</div>
               <div class="price-box card-title d-flex align-items-center justify-content-center mb-0">
                 <div class="pice-holder">
@@ -41,7 +70,7 @@ title: Pricing for Developers
                 <p class="card-text">Single store</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-success d-block">Get started</a>
+                <a href="#" class="btn btn-success d-block btn-cta">Get started</a>
               </div>
             </div>
             <div class="card text-center">
@@ -57,7 +86,7 @@ title: Pricing for Developers
                 <p class="card-text">Max 5 stores</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-warning d-block">Get started</a>
+                <a href="#" class="btn btn-warning d-block btn-cta">Get started</a>
               </div>
             </div>
             <div class="card text-center">
@@ -73,7 +102,7 @@ title: Pricing for Developers
                 <p class="card-text">Max 15 stores</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary d-block">Get started</a>
+                <a href="#" class="btn btn-primary d-block btn-cta">Get started</a>
               </div>
             </div>
             <div class="card text-center">
@@ -90,7 +119,7 @@ title: Pricing for Developers
               <div class="card-footer">
                 <a href="#" class="btn btn-dark d-block">Contact us</a>
               </div>
-            </div>
+            </div-->
           </div>
         </div>
       </div>
@@ -329,10 +358,10 @@ title: Pricing for Developers
             <div class="card-body d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between position-relative">
               <div class="text-holder position-relative">
                 <h4 class="card-title">Get started today</h4>
-                <p class="card-text hidden-md-down">Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi.</p>
+                <p class="card-text hidden-md-down">Ready to learn more? Contact our team today.</p>
               </div>
               <div class="btn-holder position-relative">
-                <a href="#" class="btn btn-warning btn-warning-custom badge-pill">GET STARTED</a>
+                <a href="#!" class="btn btn-warning btn-warning-custom badge-pill btn-cta">GET STARTED</a>
               </div>
             </div>
           </div>

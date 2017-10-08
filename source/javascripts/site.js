@@ -1,5 +1,5 @@
 var submit = function (params) {
-  axios.post('http://localhost:8888/api/v4/storefront/foodkit-leads', params)
+  return axios.post('https://api.ginja.co.th/api/v4/storefront/foodkit-leads', params)
 }
 
 /**
@@ -66,9 +66,6 @@ Vue.component('contact-us-step-one', {
  *
  */
 Vue.component('contact-us-step-two', {
-  props: [
-    //'visible'
-  ],
   methods: {
     closeModal: function () {
       this.$emit('closeModal')
@@ -76,14 +73,23 @@ Vue.component('contact-us-step-two', {
     onFormSubmitted: function (e) {
       e.preventDefault()
       e.stopPropagation()
-      // @todo: submit
+      submit({
+        first_name: this.first_name,
+        last_name: this.last_name,
+        phone_number: this.phone_number,
+        business_name: this.business_name
+      })
       this.$emit('next')
     }
   },
   data: function () {
     return {
-      email: '',
-      errors: {}
+      first_name: '',
+      last_name: '',
+      phone_number: '',
+      business_name: '',
+      errors: {},
+      offices: window.data.offices
     }
   },
   template: '\
@@ -97,8 +103,7 @@ Vue.component('contact-us-step-two', {
             	<h2 style="text-align: center;">Schedule a free product demo now</h2>\
   						<p style="text-align: center;">Fill out the form below and a Foodkit sales representative will contact you. Or you can call us:</p>\
   						<ul class="contact-us row">\
-  							<li class="col-md-6">Thailand: +64 98 712 7741</li>\
-  							<li class="col-md-6">Singapore: +65 874 6464</li>\
+                <li v-for="office in offices" class="col-md-6">{{ office.title }} {{ office.phone }}</li>\
   						</ul>\
           	</div>\
           	<div class="form-field">\

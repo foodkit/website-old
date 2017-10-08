@@ -94,9 +94,11 @@ title: Contact us
                         <%= office.address1 %> <br>
                         <%= office.address2 %>
                       </div>
-                      <a href="tel:<%= office.phone %>">
-                        <%= office.phone %>
-                      </a>
+                      <% if !office.phone.empty? %>
+                        <a href="tel:<%= office.phone %>">
+                          <%= office.phone %>
+                        </a>
+                      <% end %>
                     </address>
                   </li>
                 <% end %>

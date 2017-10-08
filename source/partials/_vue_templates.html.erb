@@ -1,1 +1,6 @@
-<!-- tba -->
+<% require "json" %>
+
+<script type="text/javascript">
+  window.data = window.data ? window.data : {}
+  window.data.offices = <%= data.offices.offices.to_json %>;
+</script>

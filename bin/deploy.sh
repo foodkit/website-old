@@ -8,7 +8,7 @@
 
 # paths
 LOCAL_PATH=./build/
-REMOTE_PATH=/var/www/dev
+REMOTE_PATH=/var/www/public
 
 # server
 USERNAME=${USERNAME:-"ec2-user"}

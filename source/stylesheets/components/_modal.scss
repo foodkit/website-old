@@ -48,7 +48,7 @@ $font-color: #e6e9ea;
     margin: 0 auto 0 auto;
 
     .modal-body {
-      max-height: 100vh;
+      max-height: 80vh;
       overflow-y: auto;
       top: 5rem;
 
@@ -62,6 +62,7 @@ $font-color: #e6e9ea;
         li {
           text-align: center;
           list-style: none;
+          padding: .3em;
         }
       }
 
