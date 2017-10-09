@@ -1,8 +1,9 @@
 <% require 'json' %>
 
 <script type="text/javascript">
-  window.data = window.data ? window.data : {}
-  window.data.offices = <%= data.offices.offices.to_json %>
+  window.data = window.data ? window.data : {};
+  window.data.offices = <%= data.offices.offices.to_json %>;
+  window.data.contactFormEndpoint = '<%= data.site.site.contact_form_endpoint %>';
 </script>
 
 <script type="text/x-template" id="contact-us-step-one-template">

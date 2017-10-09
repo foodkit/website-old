@@ -1,6 +1,9 @@
 var submit = function (params) {
-  return axios.post('https://api.ginja.co.th/api/v4/storefront/foodkit-leads', params)
+  return axios.post(window.data.contactFormEndpoint, params)
 }
+
+// Share email between components:
+var _email
 
 /**
  *
@@ -15,6 +18,7 @@ Vue.component('contact-us-step-one', {
       this.onFormChanged()
       if (!this.errors.email) {
         submit({email: this.email})
+        _email = this.email
         this.$emit('next')
       }
     },
@@ -44,6 +48,7 @@ Vue.component('contact-us-step-two', {
       e.preventDefault()
       e.stopPropagation()
       submit({
+        email: _email,
         first_name: this.first_name,
         last_name: this.last_name,
         phone_number: this.phone_number,
