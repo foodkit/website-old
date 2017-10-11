@@ -1,3 +1,9 @@
+.section-description {
+	@include media('<=tablet') {
+		background-color: white;
+	}
+}
+
 .text-info-description {
 	font-weight: 300;
 	line-height: 25px;
