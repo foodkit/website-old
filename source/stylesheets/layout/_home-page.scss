@@ -627,6 +627,12 @@
 			@include media('>=tablet') {
 				margin: 0 20px;
 			}
+
+			&.right-image {
+				img {
+				 transform: rotate(7deg);
+			 }
+			}
 		}
 	}
 }
