@@ -13,7 +13,6 @@ function initCollapsedBtn() {
 	jQuery('.navbar-toggler').on('click', function(e){
 		e.preventDefault();
 		jQuery('body').toggleClass('collapsed-btn');
-		console.log("initCollapsedBtn()");
 	});
 }
 
