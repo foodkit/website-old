@@ -260,21 +260,15 @@
 			background: rgba($white, .5);
 		}
 		&:before {
-			top: 52%;
-			left: 50%;
+			background: url('../images/carousel-plus.png') no-repeat;
+			background-position: center;
+			background-size: 50%;
 			opacity: 0;
+			position: static;
+			display: block;
 			width: 100%;
 			height: 100%;
-			content: '+';
-			color: $black;
-			display: flex;
-			text-indent: 0;
-			line-height: 0;
-			font-size: 18px;
-			font-weight: 300;
-			align-items: center;
-			justify-content: center;
-			transform: translate(-50%, -50%);
+			content: '';
 			transition: opacity $animation-speed ease-in-out;
 			@include media('<tablet') {
 				content: none;
