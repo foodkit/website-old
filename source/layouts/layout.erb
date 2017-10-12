@@ -7,9 +7,8 @@
 	<title>Foodkit</title>
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400%7cRoboto:100,300,400" rel="stylesheet">
 	<%= stylesheet_link_tag "bootstrap" %>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<%= stylesheet_link_tag "main" %>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
-	<script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous" defer></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" defer></script>
 
@@ -47,11 +46,11 @@
 </head>
 <body>
 <div id="wrapper">
-  <%= partial "partials/header" %>
-  <div class="flex-column position-relative">
-    <%= yield %>
+	<div class="flex-column position-relative">
+		<%= partial "partials/header" %>
+		<%= yield %>
+		<%= partial "partials/footer" %>
   </div>
-  <%= partial "partials/footer" %>
 </div>
 <%= partial "partials/body_scripts" %>
 </body>
