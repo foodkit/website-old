@@ -1,7 +1,7 @@
 {
   "site": {
     "domain": "https://foodkit.io",
-    "api_docs": "https://docs.foodkit.apiary.io/",
+    "api_docs": "http://docs.foodkit.apiary.io/",
     "contact_form_endpoint": "https://api.ginja.co.th/api/v4/storefront/foodkit-leads"
   }
 }
