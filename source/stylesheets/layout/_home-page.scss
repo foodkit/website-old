@@ -468,6 +468,8 @@
 		}
 	}
 	.holder {
+		$decoration-image-width-small: 586px;
+		$decoration-image-width-large: 1453px;
 		padding: 52px 0 90px;
 		@include media('>=tablet') {
 			padding: 96px 0 180px;
@@ -478,20 +480,20 @@
 		}
 		&:before {
 			content: '';
-			width: 586px;
+			width: $decoration-image-width-small;
 			height: 167px;
 			position: absolute;
 			background: url('../images/section-small-decoration-2x.png') no-repeat;
 			background-size: contain !important;
 			@include media('>=tablet') {
-				width: 1453px;
+				width: $decoration-image-width-large;
 				height: 414px;
 				background: url('../images/section-large-decoration-2x.png') no-repeat;
 			}
 		}
 		&:before {
 			top: 20%;
-			left: -11%;
+			left: calc((50% - #{$decoration-image-width-small}) / 2);
 		}
 		&:after {
 			top: 0;
