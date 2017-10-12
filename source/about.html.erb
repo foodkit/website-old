@@ -2,7 +2,7 @@
 title: About us
 ---
 <main id="main" class="content-about">
-  <div class="section-page-header position-relative">
+  <div class="section-page-header position-relative white-bg">
     <div class="section-wrapper position-relative">
       <div class="container">
       <div class="row">
@@ -23,7 +23,9 @@ title: About us
   <%= partial "partials/about_us_links", :locals => {:selected => 'about'} %>
   <div class="section-preview position-relative d-flex">
     <div class="bg-stretch position-absolute h-100 w-100">
-      <img class="img-as-bg" srcset="images/preview-box-bg-large.jpg, images/preview-box-bg-large-2x.jpg 2x">
+      <div class="position-relative h-100 w-100">
+        <img class="img-as-bg position-absolute" srcset="images/preview-box-bg-large.jpg, images/preview-box-bg-large-2x.jpg 2x">
+      </div>    
     </div>
     <div class="container d-flex">
       <div class="row">
