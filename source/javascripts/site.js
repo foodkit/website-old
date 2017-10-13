@@ -2,6 +2,24 @@ var submit = function (params) {
   return axios.post(window.data.contactFormEndpoint, params)
 }
 
+var track = function (event) {
+  if (typeof ga !== 'undefined') {
+    console.log('track()...', event)
+    ga('send', 'event', 'Contact us', event);
+  } else {
+    console.log('... could not find ga()!')
+  }
+}
+
+var trackConversion = function () {
+  console.log('trackConversion()...')
+  if (typeof gtag_report_conversion !== 'undefined') {
+    gtag_report_conversion()
+  } else {
+    console.log('... could not find gtag_report_conversion()!')
+  }
+}
+
 // Share email between components:
 var _email
 
@@ -20,10 +38,13 @@ Vue.component('contact-us-step-one', {
         submit({email: this.email})
         _email = this.email
         this.$emit('next')
+        trackConversion()
+        track('step-one-submit')
       }
     },
     closeModal: function () {
       this.$emit('closeModal')
+      track('close-modal')
     }
   },
   data: function () {
@@ -43,6 +64,7 @@ Vue.component('contact-us-step-two', {
   methods: {
     closeModal: function () {
       this.$emit('closeModal')
+      track('close-modal')
     },
     onFormSubmitted: function (e) {
       e.preventDefault()
@@ -55,6 +77,7 @@ Vue.component('contact-us-step-two', {
         business_name: this.business_name
       })
       this.$emit('next')
+      track('step-two-submit')
     }
   },
   data: function () {
@@ -77,11 +100,13 @@ Vue.component('contact-us-step-three', {
   methods: {
     closeModal: function () {
       this.$emit('closeModal')
+      track('close-modal')
     },
     onFormSubmitted: function (e) {
       e.preventDefault()
       e.stopPropagation()
       this.$emit('next')
+      track('step-three-submit')
     }
   },
   template: '#contact-us-step-three-template'
@@ -126,6 +151,7 @@ var contactUs = new Vue({
 var elements = document.getElementsByClassName('btn-cta')
 for (var i=0 ; i<elements.length ; i++) {
   elements[i].onclick = function () {
+    track('cta-button-click')
     contactUs.stepOne()
     return false
   }
