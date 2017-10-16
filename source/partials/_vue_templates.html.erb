@@ -13,8 +13,9 @@
       <div class="modal-body">
         <div>
           <div>
-            <h2 style="text-align: center;">Want to learn more?</h2>
-            <p style="text-align: center;">No hassle chat with a customer service officer.</p>
+            <h2 style="text-align: center;">Let us show you Foodkit</h2>
+            <p style="text-align: center;">Leave your contact details below. 
+              A customer service officer will contact you to arrange a demo and show you how to get started.</p>
           </div>
           <div class="form-field">
             <div class="form-input-container">
@@ -22,12 +23,12 @@
             </div>
             <ul class="validation-messages" v-if="errors.email">
               <li>
-                <label for="email" role="alert" class="form-inline-message">Valid email address is required</label>
+                <label for="email" role="alert" class="form-inline-message">A valid email address is required</label>
               </li>
             </ul>
           </div>
           <div>
-            <button v-on:click="onFormSubmitted" class="btn btn-primary btn-lg badge-pill text-uppercase">Book Demo</button>
+            <button v-on:click="onFormSubmitted" class="btn btn-primary btn-lg badge-pill text-uppercase">Continue</button>
           </div>
         </div>
         <div class="modal-footer"></div>
@@ -43,11 +44,8 @@
       <div class="modal-body">
         <div>
           <div>
-            <h2 style="text-align: center;">Schedule a free product demo now</h2>
-            <p style="text-align: center;">Fill out the form below and a Foodkit sales representative will contact you. Or you can call us:</p>
-            <ul class="contact-us row">
-              <li v-for="office in offices" class="col-md-6">{{ office.title }} {{ office.phone }}</li>
-            </ul>
+            <h2 style="text-align: center;">Your Contact Details</h2>
+            <p style="text-align: center;">Please provide your full contact details below. 
           </div>
           <div class="form-field">
             <div class="row">
@@ -67,6 +65,12 @@
           </div>
           <div>
             <button v-on:click="onFormSubmitted" class="btn btn-primary btn-lg badge-pill text-uppercase">Book Demo</button>
+          </div>
+          <div class="pt-4">
+            <p style="text-align: center;">You can also call us:</p>
+            <ul class="contact-us row">
+              <li v-for="office in offices" class="col-md-6">{{ office.title }} {{ office.phone }}</li>
+            </ul>
           </div>
         </div>
       </div>
