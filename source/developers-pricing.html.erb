@@ -14,10 +14,10 @@ title: Pricing for Developers
         <div class="col-12">
           <div class="btn-check d-flex align-items-center flex-column">
             <div class="btn-group" data-toggle="buttons">
-              <label class="btn btn-light active">
+              <label class="btn btn-light pricing-btn monthly active">
                 <input type="radio" name="options" id="option1" autocomplete="off" checked>Monthly
               </label>
-              <label class="btn btn-light">
+              <label class="btn btn-light pricing-btn yearly">
                 <input type="radio" name="options" id="option2" autocomplete="off">Yearly
               </label>
             </div>
@@ -37,10 +37,10 @@ title: Pricing for Developers
                     <p><sup>$</sup><span class="text-amount"><%= plan.price.round 0 %></span><span>/mo</span></p>
                     <p class="subtitle">+ $<%= plan.setup_price.round 0 %> Setup Fee</p>
                   </div>
-                  <!--div class="price-holder yearly">
+                  <div class="price-holder yearly hide">
                     <p><sup>$</sup><span class="text-amount"><%= plan.price.*(data.plans.yearly_discount).round 0 %></span><span>/mo</span></p>
                     <p class="subtitle">+ $<%= plan.setup_price.*(data.plans.yearly_discount).round 0 %> Setup Fee</p>
-                  </div-->
+                  </div>
                 <% else %>
                   <div class="price-holder">
                     <span class="price-info">Contact us</span>
