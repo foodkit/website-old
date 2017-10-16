@@ -44,11 +44,8 @@
       <div class="modal-body">
         <div>
           <div>
-            <h2 style="text-align: center;">Schedule a free product demo now</h2>
-            <p style="text-align: center;">Fill out the form below and a Foodkit sales representative will contact you. Or you can call us:</p>
-            <ul class="contact-us row">
-              <li v-for="office in offices" class="col-md-6">{{ office.title }} {{ office.phone }}</li>
-            </ul>
+            <h2 style="text-align: center;">Your Contact Details</h2>
+            <p style="text-align: center;">Please provide your full contact details below. 
           </div>
           <div class="form-field">
             <div class="row">
@@ -68,6 +65,12 @@
           </div>
           <div>
             <button v-on:click="onFormSubmitted" class="btn btn-primary btn-lg badge-pill text-uppercase">Book Demo</button>
+          </div>
+          <div class="pt-4">
+            <p style="text-align: center;">You can also call us:</p>
+            <ul class="contact-us row">
+              <li v-for="office in offices" class="col-md-6">{{ office.title }} {{ office.phone }}</li>
+            </ul>
           </div>
         </div>
       </div>
