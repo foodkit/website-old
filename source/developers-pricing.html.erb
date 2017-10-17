@@ -38,8 +38,8 @@ title: Pricing for Developers
                     <p class="subtitle">+ $<%= plan.setup_price.round 0 %> Setup Fee</p>
                   </div>
                   <div class="price-holder yearly hide">
-                    <p><sup>$</sup><span class="text-amount"><%= plan.price.*(data.plans.yearly_discount).round 0 %></span><span>/mo</span></p>
-                    <p class="subtitle">+ $<%= plan.setup_price.*(data.plans.yearly_discount).round 0 %> Setup Fee</p>
+                    <p><sup>$</sup><span class="text-amount"><%= (plan.price - plan.price.*(data.plans.yearly_discount)).round 0 %></span><span>/mo</span></p>
+                    <p class="subtitle">+ $<%= (plan.setup_price - plan.setup_price.*(data.plans.yearly_discount)).round 0 %> Setup Fee</p>
                   </div>
                 <% else %>
                   <div class="price-holder">
