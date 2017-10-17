@@ -20,6 +20,11 @@
 		@include media('>=tablet') {
 			min-height: 104px;
 		}
+		.price-holder {
+			&.hide {
+				display: none;
+			}
+		}
 		sup {
 			top: -.05em;
 			font-size: 100%;

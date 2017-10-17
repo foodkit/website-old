@@ -7,7 +7,19 @@ jQuery(function() {
 	initModal();
 	initLightbox();
 	initBackgroundVideo();
+	initPricingBtn();
 });
+
+function initPricingBtn() {
+	jQuery('.pricing-btn.monthly').on('click', function(e) {
+		$('.price-holder.monthly').removeClass('hide');
+		$('.price-holder.yearly').addClass('hide');
+	});
+	jQuery('.pricing-btn.yearly').on('click', function(e) {
+		$('.price-holder.yearly').removeClass('hide');
+		$('.price-holder.monthly').addClass('hide');
+	});
+}
 
 function initCollapsedBtn() {
 	jQuery('.navbar-toggler').on('click', function(e){
