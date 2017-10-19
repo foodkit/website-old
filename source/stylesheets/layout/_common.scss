@@ -1,3 +1,5 @@
+$careers-section-preview-height: 589px;
+
 .modal-active {
 	overflow: hidden;
 }
@@ -760,7 +762,7 @@
 		min-height: 415px;
 		margin-top: 38px;
 		@include media('>=tablet') {
-			min-height: 589px;
+			min-height: $careers-section-preview-height;
 			margin-top: 10px;
 		}
 		.bg-stretch {
@@ -981,6 +983,56 @@
 				min-width: 249px;
 				padding-top: 17px;
 				padding-bottom: 17px;
+			}
+		}
+	}
+}
+
+// Fixes for IE 10
+
+.ie10 {
+	body #wrapper {
+		#header {
+			.navbar-expand-md {
+				.navbar-collapse {
+					max-width: 50%;
+				}
+				.sign-up-box {
+					margin-left: auto;
+				}
+			}
+		}
+		#main {
+			.section-preview {
+				.container{
+					min-height: $careers-section-preview-height !important;
+					.row {
+						min-height: 100% !important;
+						padding: 5% 0;
+						.d-flex {
+							padding: 10% 0;
+							display: block !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.ie11 {
+	body #wrapper {
+		#header {
+			.navbar-expand-md {
+				// TODO: fix the overlapping nav items
+			}
+		}
+		#main {
+			.section-description {
+				// TODO: fix the overflow images 
+			}
+			.section-preview {
+				// TODO: fix vertical align
 			}
 		}
 	}
