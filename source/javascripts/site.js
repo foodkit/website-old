@@ -156,3 +156,11 @@ for (var i=0 ; i<elements.length ; i++) {
     return false
   }
 }
+
+if (/*@cc_on!@*/false) {
+  document.documentElement.className+=' ie10';
+}
+
+if (!!window.MSInputMethodContext && !!document.documentMode) {
+  document.documentElement.className+=' ie11';
+}
