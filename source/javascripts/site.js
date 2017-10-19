@@ -131,12 +131,6 @@ for (var i=0 ; i<elements.length ; i++) {
   }
 }
 
-// var doc = document.documentElement;
-// doc.setAttribute(
-//     'data-useragent',
-//     (navigator.userAgent.indexOf("MSIE 10.0") !== -1 ? "MSIE 10.0" : "no-MSIE 10.0")
-// );
-
 if (/*@cc_on!@*/false) {
   document.documentElement.className+=' ie10';
 }
