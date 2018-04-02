@@ -1,3 +1,10 @@
+var hubspotCookie = function () {
+  var name = 'hubspotutk';
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
+
 var submit = function (params) {
   return axios.post(window.data.contactFormEndpoint, params)
 }
@@ -35,7 +42,7 @@ Vue.component('contact-us-step-one', {
     onFormSubmitted: function () {
       this.onFormChanged()
       if (!this.errors.email) {
-        submit({email: this.email})
+        submit({email: this.email, hubspot_cookie: hubspotCookie()})
         _email = this.email
         this.$emit('next')
         trackConversion()
@@ -74,7 +81,8 @@ Vue.component('contact-us-step-two', {
         first_name: this.first_name,
         last_name: this.last_name,
         phone_number: this.phone_number,
-        business_name: this.business_name
+        business_name: this.business_name,
+        hubspot_cookie: hubspotCookie()
       })
       this.$emit('next')
       track('step-two-submit')
