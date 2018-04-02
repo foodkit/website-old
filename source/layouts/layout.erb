@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<%= partial "partials/_google_analytics" %>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= current_page.data.title || "Home" %> &dash; Foodkit.io</title>
-	<title>Foodkit</title>
+	<title><%= current_page.data.title || "Home" %> &dash; Foodkit.io</title>
+
+	<% if(current_page.data.description) %>
+		<meta name="description" content="<%= current_page.data.description %>">
+	<% end %>
+	<% if(current_page.data.keywords) %>
+		<meta name="keywords" content="<%= current_page.data.keywords %>">
+	<% end %>
+
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400%7cRoboto:100,300,400" rel="stylesheet">
 	<%= stylesheet_link_tag "bootstrap" %>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -43,9 +51,6 @@
 	<meta property="og:site_name" content="Foodkit.io">
 	<meta name="twitter:image:alt" content="Foodkit: a complete revolution in F&amp;B technology">
 	<!-- /metadata -->
-	<!-- Start of HubSpot Embed Code -->
-	<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3995822.js"></script>
-	<!-- End of HubSpot Embed Code -->
 	<%= partial "partials/_conversion_codes" %>
 </head>
 <body>
